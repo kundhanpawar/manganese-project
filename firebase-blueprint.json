@@ -1,0 +1,31 @@
+{
+  "entities": {
+    "AnalysisRecord": {
+      "title": "Analysis Record",
+      "description": "A record of an analyzed manganese heatmap.",
+      "type": "object",
+      "properties": {
+        "userId": {
+          "type": "string",
+          "description": "User ID of the anonymous user who analyzed this."
+        },
+        "locationName": {
+          "type": "string"
+        },
+        "imageUrl": {
+          "type": "string"
+        },
+        "timestamp": {
+          "type": "number"
+        }
+      },
+      "required": ["userId", "locationName", "imageUrl"]
+    }
+  },
+  "firestore": {
+    "analyses/{analysisId}": {
+      "schema": "AnalysisRecord",
+      "description": "Store user analysis runs."
+    }
+  }
+}

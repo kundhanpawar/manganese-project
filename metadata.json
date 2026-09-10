@@ -1,0 +1,8 @@
+{
+  "name": "manganese",
+  "description": "Integrated AI analysis dashboard for Sentinel-2A satellite imagery to detect manganese concentrations, lime-color mineral signatures, vegetation anomalies, and ground pH excavation alerts.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
